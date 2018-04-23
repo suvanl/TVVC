@@ -25,7 +25,7 @@ namespace TVVC
                 return null;
 
             // Gets the name of the file/folder
-            var name = MainWindow.GetFileFolderName(path);
+            var name = DirectoryStructure.GetFileFolderName(path);
 
             // Presumes an image by default
             var image = "Images/file.png";
