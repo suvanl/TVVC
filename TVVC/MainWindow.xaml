@@ -4,12 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TVVC"
+        Loaded="Window_Loaded"
         mc:Ignorable="d"
         Title="TVVC" Height="350" Width="525">
     <Grid>
         <TreeView x:Name="FolderView">
             <TreeView.Resources>
-                
+
                 <Style TargetType="{x:Type TreeViewItem}">
                     <Setter Property="HeaderTemplate">
                         <Setter.Value>
@@ -26,7 +27,7 @@
                         </Setter.Value>
                     </Setter>
                 </Style>
-                
+
             </TreeView.Resources>
         </TreeView>
     </Grid>

@@ -9,7 +9,7 @@ namespace TVVC
     /// <summary>
     /// Converts a full path to a specific image type of a drive, folder or file
     /// </summary>
-    
+
     [ValueConversion(typeof(string), typeof(BitmapImage))]
     public class HeaderToImageConverter : IValueConverter
     {
@@ -25,7 +25,7 @@ namespace TVVC
                 return null;
 
             // Gets the name of the file/folder
-            var name = DirectoryStructure.GetFileFolderName(path);
+            var name = MainWindow.GetFileFolderName(path);
 
             // Presumes an image by default
             var image = "Images/file.png";

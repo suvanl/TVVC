@@ -25,6 +25,37 @@ namespace TVVC
 
         #region On Loaded
 
+        /// <summary>
+        /// When the application first opens
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Gets every logical drive on the machine
+            foreach (var drive in Directory.GetLogicalDrives())
+            {
+                // Creates a new item for each one
+                var item = new TreeViewItem()
+                {
+                    // Sets the header
+                    Header = drive,
+                    // Sets the full path
+                    Tag = drive
+                };
+
+                // Adds a dummy item
+                item.Items.Add(null);
+
+                // Listens out for the item being expanded
+                item.Expanded += Folder_Expanded;
+
+                // Adds it to the main TreeView
+                FolderView.Items.Add(item);
+            }
+        }
+
         #endregion
 
         #region Folder Expanded
@@ -103,6 +134,35 @@ namespace TVVC
             #endregion
         }
 
+
+        #endregion
+
+        #region Helpers
+
+        /// <summary>
+        /// Finds the file or folder name from a full path
+        /// </summary>
+        /// <param name="path">The full path</param>
+        /// <returns></returns>
+        public static string GetFileFolderName(string path)
+        {
+            // Returns empty if no path exists
+            if (string.IsNullOrEmpty(path))
+                return string.Empty;
+
+            // Converts all forward slashes to backslashes
+            var normalizedPath = path.Replace('/', '\\');
+
+            // Finds the last backslash in the path
+            var lastIndex = normalizedPath.LastIndexOf('\\');
+
+            // Returns the path itself if no backslash is found
+            if (lastIndex <= 0)
+                return path;
+
+            // Return the file name (after the final backslash)
+            return path.Substring(lastIndex + 1);
+        }
 
         #endregion
     }
