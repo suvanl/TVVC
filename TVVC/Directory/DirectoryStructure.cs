@@ -5,6 +5,8 @@
     /// </summary>
     public static class DirectoryStructure
     {
+        public static List<DirectoryItem> 
+
         #region Helpers
 
         /// <summary>

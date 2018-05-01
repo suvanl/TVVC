@@ -6,6 +6,11 @@
     public class DirectoryItem
     {
         /// <summary>
+        /// The type of this item
+        /// </summary>
+        public DirectoryItemType Type { get; set; }
+
+        /// <summary>
         /// The absolute path to the item
         /// </summary>
         public string FullPath { get; set; }

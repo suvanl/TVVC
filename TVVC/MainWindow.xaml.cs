@@ -25,37 +25,6 @@ namespace TVVC
 
         #region On Loaded
 
-        /// <summary>
-        /// When the application first opens
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            // Gets every logical drive on the machine
-            foreach (var drive in Directory.GetLogicalDrives())
-            {
-                // Creates a new item for each one
-                var item = new TreeViewItem()
-                {
-                    // Sets the header
-                    Header = drive,
-                    // Sets the full path
-                    Tag = drive
-                };
-
-                // Adds a dummy item
-                item.Items.Add(null);
-
-                // Listens out for the item being expanded
-                item.Expanded += Folder_Expanded;
-
-                // Adds it to the main TreeView
-                FolderView.Items.Add(item);
-            }
-        }
-
         #endregion
 
         #region Folder Expanded
