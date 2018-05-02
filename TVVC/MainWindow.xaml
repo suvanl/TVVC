@@ -4,31 +4,29 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TVVC"
-        Loaded="Window_Loaded"
         mc:Ignorable="d"
         Title="TVVC" Height="350" Width="525">
     <Grid>
-        <TreeView x:Name="FolderView">
-            <TreeView.Resources>
+        <TreeView x:Name="FolderView" ItemsSource="{Binding Items}">
 
+            <TreeView.ItemContainerStyle>
                 <Style TargetType="{x:Type TreeViewItem}">
-                    <Setter Property="HeaderTemplate">
-                        <Setter.Value>
-                            <DataTemplate>
-                                <StackPanel Orientation="Horizontal">
-                                    <Image Width="20" Margin="3"
-                                           Source="{Binding
-                                                RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type TreeViewItem}},
-                                                Path=Tag,
-                                                Converter={x:Static local:HeaderToImageConverter.Instance}}" />
-                                    <TextBlock VerticalAlignment="Center" Text="{Binding}" />
-                                </StackPanel>
-                            </DataTemplate>
-                        </Setter.Value>
-                    </Setter>
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
                 </Style>
+            </TreeView.ItemContainerStyle>
 
-            </TreeView.Resources>
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20" Margin="3"
+                                    Source="{Binding Type,
+                                        Converter={x:Static local:HeaderToImageConverter.Instance}}" />
+                        <TextBlock VerticalAlignment="Center" Text="{Binding Name}" />
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+
         </TreeView>
     </Grid>
+
 </Window>
