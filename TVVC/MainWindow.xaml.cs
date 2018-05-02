@@ -19,6 +19,8 @@ namespace TVVC
         public MainWindow()
         {
             InitializeComponent();
+
+            this.DataContext = new DirectoryStructureViewModel();
         }
 
         #endregion
