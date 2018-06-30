@@ -81,7 +81,7 @@ namespace TVVC
             if (lastIndex <= 0)
                 return path;
 
-            // Return the file name (after the final backslash)
+            // Returns the file name (after the final backslash)
             return path.Substring(lastIndex + 1);
         }
 
