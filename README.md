@@ -1,9 +1,21 @@
-# <a href="https://github.com/suvanl/TVVC"><img src="https://vgy.me/RdmbeG.png" /></a> TVVC
-### A lightweight & advanced file explorer
+# TVVC
 
-TVVC isn't your ordinary file explorer.
+<p align="center"><a href="https://github.com/suvanl/TVVC" title="TVVC"><img src="https://vgy.me/RdmbeG.png" alt="Logo"></a>
+
+<p align="center"><strong>A lightweight & advanced file explorer</strong>
+<br>TVVC isn't your ordinary file explorer.
 On Windows, even after enabling the ability to view "hidden" files and folders, not all are actually shown, in Windows Explorer.
-TVVC tackles this issue, and displays *everything* in the selected drive - no caveats.
-
-This application uses WPF, thus allowing a much cleaner, more modern user interface (and better backend workings) than a WinForms
+TVVC tackles this issue, and displays *everything* in the selected drive - no caveats. This application uses WPF, thus allowing a much cleaner, more modern user interface (and better backend workings) than a WinForms
 application of this sort would have.
+</p>
+
+![Application Screenshot](https://vgy.me/CMNQfm.png)
+
+*TVVC's UI is still very simple. This screenshot shows a sample of the C:\ drive, but all logical drives on your machine can be browsed using TVVC.*
+
+## Installation
+
+***Coming soon.***
+
+## License
+Licensed under the [MIT License](https://github.com/suvanl/TVVC/blob/master/LICENSE).
