@@ -1,4 +1,4 @@
-# TVVC
+# <a href="https://github.com/suvanl/TVVC"><img src="https://vgy.me/RdmbeG.png" /></a> TVVC
 ### A lightweight & advanced file explorer
 
 TVVC isn't your ordinary file explorer.

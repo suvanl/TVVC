@@ -17,7 +17,6 @@ namespace TVVC
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-
             // Presumes an image by default
             var image = "Images/file.png";
 
