@@ -15,7 +15,15 @@ application of this sort would have.
 
 ## Installation
 
-***Coming soon.***
+- Head to the [**Releases** page](https://github.com/suvanl/TVVC/releases)
+- Locate the latest release (should be at the top, marked by the green "Latest release" label)
+- Under the "Assets" header, click on **TVVC-Setup.exe** to download the installer
+
+> **NOTE**
+You may get security warnings as this is not a commonly downloaded file, and this application's code has not been signed.
+However, I can assure you that this application was not created with any malicious intent whatsoever, and the source code
+is available here on this repository to further prove this. Please also note that this application is only (securely) available 
+from this GitHub repository, and nowhere else on the internet.
 
 ## License
 Licensed under the [MIT License](https://github.com/suvanl/TVVC/blob/master/LICENSE).
