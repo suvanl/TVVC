@@ -1,5 +1,7 @@
 # TVVC
 
+### Latest release: v1.0.0
+
 <p align="center"><a href="https://github.com/suvanl/TVVC" title="TVVC"><img src="https://vgy.me/RdmbeG.png" alt="Logo"></a>
 
 <p align="center"><strong>A lightweight & advanced file explorer</strong>
