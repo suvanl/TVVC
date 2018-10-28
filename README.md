@@ -1,6 +1,6 @@
 # TVVC
 
-### Latest release: v1.0.0
+### Latest release: v1.0.1
 
 <p align="center"><a href="https://github.com/suvanl/TVVC" title="TVVC"><img src="https://vgy.me/RdmbeG.png" alt="Logo"></a>
 
