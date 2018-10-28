@@ -5,6 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TVVC"
         mc:Ignorable="d"
+        MinWidth="300"
+        MinHeight="150"
         Title="TVVC" Height="350" Width="525">
     <Grid>
         <TreeView x:Name="FolderView" ItemsSource="{Binding Items}">
